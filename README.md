@@ -3,7 +3,7 @@
 Welcome to **Py4DataEng**, your ultimate resource hub for mastering Python in the world of Data Engineering! 🚀 This repository is packed with **code examples**, **hands-on projects**, and **organized topics** to help you practice, review, and level up your skills. Whether you're a beginner or an experienced engineer, you'll find something valuable here. Let's dive in! 🌊
 
 
-<img align="center" width="1000" height="700" src="https://files.realpython.com/media/Python-Data-Science_Watermarked.2789459dd138.jpg">
+<img align="center" width="1000" height="600" src="https://files.realpython.com/media/Python-Data-Science_Watermarked.2789459dd138.jpg">
 
 ---
 
