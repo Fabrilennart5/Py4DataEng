@@ -21,7 +21,7 @@ Welcome to **Py4DataEng**, your ultimate resource hub for mastering Python in th
 - **JSON Validation**: Ensure your data is clean and valid. ✅
 - **UniTreating**: Techniques to standardize and clean your data. 🔄
 
-### 🐼 **Pandas & DuckDB: Data Wrangling Power Duo**
+### 🐼 **Pandas & DuckDB: Data Wrangling**
 - **Pandas Basics**: Get started with DataFrames and data types. 🧩
 - **Appending & Merging**: Combine datasets seamlessly. 🔗
 - **Normalizing & Lambdas**: Clean and transform data with ease. λ
