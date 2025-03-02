@@ -1,0 +1,85 @@
+{
+  "peliculas": [
+    {
+      "titulo": "Inception",
+      "año": 2010,
+      "genero": "Ciencia Ficción",
+      "duracion_minutos": 148,
+      "calificacion": 8.8,
+      "director": "Christopher Nolan"
+    },
+    {
+      "titulo": "The Dark Knight",
+      "año": 2008,
+      "genero": "Acción",
+      "duracion_minutos": 152,
+      "calificacion": 9.0,
+      "director": "Christopher Nolan"
+    },
+    {
+      "titulo": "Interstellar",
+      "año": 2014,
+      "genero": "Ciencia Ficción",
+      "duracion_minutos": 169,
+      "calificacion": 8.6,
+      "director": "Christopher Nolan"
+    },
+    {
+      "titulo": "The Matrix",
+      "año": 1999,
+      "genero": "Ciencia Ficción",
+      "duracion_minutos": 136,
+      "calificacion": 8.7,
+      "director": "Lana Wachowski, Lilly Wachowski"
+    },
+    {
+      "titulo": "Pulp Fiction",
+      "año": 1994,
+      "genero": "Crimen",
+      "duracion_minutos": 154,
+      "calificacion": 8.9,
+      "director": "Quentin Tarantino"
+    },
+    {
+      "titulo": "Fight Club",
+      "año": 1999,
+      "genero": "Drama",
+      "duracion_minutos": 139,
+      "calificacion": 8.8,
+      "director": "David Fincher"
+    },
+    {
+      "titulo": "The Lord of the Rings: The Return of the King",
+      "año": 2003,
+      "genero": "Fantasía",
+      "duracion_minutos": 201,
+      "calificacion": 8.9,
+      "director": "Peter Jackson"
+    },
+    {
+      "titulo": "Gladiator",
+      "año": 2000,
+      "genero": "Acción",
+      "duracion_minutos": 155,
+      "calificacion": 8.5,
+      "director": "Ridley Scott"
+    },
+    {
+      "titulo": "The Social Network",
+      "año": 2010,
+      "genero": "Biografía",
+      "duracion_minutos": 120,
+      "calificacion": 7.7,
+      "director": "David Fincher"
+    },
+    {
+      "titulo": "The Grand Budapest Hotel",
+      "año": 2014,
+      "genero": "Comedia",
+      "duracion_minutos": 99,
+      "calificacion": 8.1,
+      "director": "Wes Anderson"
+    }
+  ],
+  "ultima_actualizacion": "2023-10-05 12:00:00"
+}
