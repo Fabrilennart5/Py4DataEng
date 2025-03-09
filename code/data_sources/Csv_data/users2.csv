@@ -1,0 +1,4 @@
+customer_id,first_name,last_name,email,city,country
+21,laura,gonzalez,laura.gonzalez@example.com,barcelona,spain
+22,alex,turner,alex.turner@example.com,manchester,uk
+23,marina,silva,marina.silva@example.com,rio de janeiro,brazil

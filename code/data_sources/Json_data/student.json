@@ -1,0 +1,11 @@
+{
+  "nombre": "Juan Pérez",
+  "edad": 30,
+  "es_estudiante": false,
+  "habilidades": ["Python", "JavaScript", "SQL"],
+  "direccion": {
+    "calle": "Calle Falsa 123",
+    "ciudad": "Madrid",
+    "codigo_postal": "28001"
+  }
+}

@@ -1,33 +1,23 @@
-# Log management is key to identifying and resolving real-time issues.
-# It enables pattern analysis and trend spotting for
-# improved system security and stability.
+# Log management is essential for identifying and resolving issues in real-time.
+# It helps analyze patterns and trends to improve system security and stability.
 
 import logging
 
-# there are for levels of logging
-# DEBUG, INFO, WARNING, ERROR, CRITICAL
-# these levels are ordered from least to most important
-# and  they have a number associated with them
-# DEBUG = 10
-# INFO = 20
-# WARNING = 30
-# ERROR = 40
-# CRITICAL = 50
+# Logging levels (from least to most critical):
+# DEBUG (10), INFO (20), WARNING (30), ERROR (40), CRITICAL (50)
 
-# for  configuring the logs we use this:
-
+# Configure logging to write to a file with a specific format
 logging.basicConfig(
     filename="data_processing.log",
     level=logging.DEBUG,
-    format="%(asctime)s:%(levelname)s:%(message)s",  # time level message
+    format="%(asctime)s:%(levelname)s:%(message)s",  # Format: timestamp, level, message
 )
 
 
-# Function to process a list of numbers
 def process_numbers(numbers):
     """
     Process a list of numbers: calculate sum and average.
-    Logs important events such as errors and key steps.
+    Logs key steps and errors for debugging and monitoring.
     """
     logging.info("Starting number processing...")
 
@@ -53,6 +43,6 @@ def process_numbers(numbers):
 numbers = [10, 20, 30, 40, 50]
 process_numbers(numbers)
 
-# Simulating an error with an invalid list
+# Simulating an error with invalid data
 invalid_data = [10, "twenty", 30]  # This will cause an error
 process_numbers(invalid_data)

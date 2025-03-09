@@ -1,29 +1,70 @@
-# Dattime is and important topic in data engineering
-# We will see how to work with datetime in python
+# Working with dates and times is essential in data engineering.
+# Python's `datetime` module provides tools to handle dates, times, and time intervals.
 
-from datetime import datetime
-from datetime import timedelta
+from datetime import datetime, timedelta
 
-# this is how we generate a datetime now and print it
-
+# Get the current date and time
 current_datetime = datetime.now()
-print(current_datetime)
+print("Current datetime:", current_datetime)
 
 
-def substractHours(date, hours):
-    # this is how we substract hours
+def subtract_hours(date, hours):
+    """
+    Subtract hours from a given datetime.
+
+    Args:
+        date (datetime): The datetime object.
+        hours (int): Number of hours to subtract.
+
+    Returns:
+        datetime: The updated datetime.
+    """
     return date - timedelta(hours=hours)
 
 
-# if we print this function
-print(substractHours(current_datetime, 2))
-
-# we can also format the way this is displayed
+# Example: Subtract 2 hours from the current datetime
+print("Datetime after subtracting 2 hours:", subtract_hours(current_datetime, 2))
 
 
-def formatdate(date):
+def format_date(date):
+    """
+    Format a datetime object into a readable string.
+
+    Args:
+        date (datetime): The datetime object.
+
+    Returns:
+        str: Formatted date string (YYYY/MM/DD HH:MM:SS).
+    """
     return date.strftime("%Y/%m/%d %H:%M:%S")
 
 
-# if we print this, we are going to get a formatted date
-print(formatdate(substractHours(current_datetime, 2)))
+# Example: Format the datetime after subtracting 2 hours
+formatted_date = format_date(subtract_hours(current_datetime, 2))
+print("Formatted datetime:", formatted_date)
+
+
+# Additional examples of using the datetime module
+
+# 1. Create a specific datetime
+specific_date = datetime(2023, 10, 31, 15, 30)  # October 31, 2023, 3:30 PM
+print("Specific datetime:", specific_date)
+
+# 2. Add days to a datetime
+future_date = specific_date + timedelta(days=10)
+print("Datetime after adding 10 days:", future_date)
+
+# 3. Compare two datetimes
+if future_date > current_datetime:
+    print("Future date is after the current datetime.")
+
+# 4. Extract components from a datetime
+print("Year:", specific_date.year)
+print("Month:", specific_date.month)
+print("Day:", specific_date.day)
+print("Hour:", specific_date.hour)
+print("Minute:", specific_date.minute)
+
+# 5. Calculate the difference between two datetimes
+time_difference = future_date - specific_date
+print("Time difference between future_date and specific_date:", time_difference)

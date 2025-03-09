@@ -1,0 +1,21 @@
+customer_id,first_name,last_name,email,city,country
+1,john,doe,john.doe@example.com,new york,usa
+2,jane,smith,jane.smith@example.com,los angeles,usa
+3,carlos,gomez,carlos.gomez@example.com,mexico city,mexico
+4,maria,lopez,maria.lopez@example.com,madrid,spain
+5,ahmed,khan,ahmed.khan@example.com,cairo,egypt
+6,li,wei,li.wei@example.com,beijing,china
+7,anna,nowak,anna.nowak@example.com,warsaw,poland
+8,pablo,garcia,pablo.garcia@example.com,buenos aires,argentina
+9,sophie,dubois,sophie.dubois@example.com,paris,france
+10,james,brown,james.brown@example.com,london,uk
+11,emma,wilson,emma.wilson@example.com,sydney,australia
+12,luca,rossi,luca.rossi@example.com,rome,italy
+13,yuki,tanaka,yuki.tanaka@example.com,tokyo,japan
+14,olga,ivanova,olga.ivanova@example.com,moscow,russia
+15,mohammed,ali,mohammed.ali@example.com,dubai,uae
+16,isabella,martinez,isabella.martinez@example.com,bogota,colombia
+17,daniel,kim,daniel.kim@example.com,seoul,south korea
+18,sara,andersson,sara.andersson@example.com,stockholm,sweden
+19,david,muller,david.muller@example.com,berlin,germany
+20,fatima,ahmed,fatima.ahmed@example.com,cairo,egypt

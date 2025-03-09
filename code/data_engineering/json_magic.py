@@ -1,25 +1,25 @@
-# Most APIs are based on JSON (JavaScript Object Notation)
-# so you need to learn how to work with this format
+# Working with JSON is essential since most APIs use this format.
+# Python's `json` module makes it easy to parse and manipulate JSON data.
+
 import json
 from pprint import pprint
 import pandas as pd
 
-# Declare a variable with the path to the JSON file
+# Path to the JSON file
 path = r"D:\Proyectos de codigo\python\code\data_sources\movies.json"
 
-# Open the file in read mode
+# Open and load the JSON file
 with open(path, "r", encoding="utf-8") as file:
-    # Load the JSON file into a dictionary
-    data = json.load(file)  # json.load() reads the file and converts it to a Python dictionary
+    data = json.load(file)  # Convert JSON to a Python dictionary
 
-# Print the raw JSON data in a pretty format
+# Pretty-print the raw JSON data
 print("Raw JSON data:")
 pprint(data)
 
 # Access the list of movies
 movies = data["peliculas"]
 
-# Print all movies in the JSON data
+# Print all movies
 print("\nMovies in the JSON data:")
 pprint(movies)
 
@@ -28,23 +28,22 @@ print("\nDetails of 'Interstellar':")
 for movie in movies:
     if movie["titulo"] == "Interstellar":
         pprint(movie)  # Pretty-print the movie details
-        break  # Exit the loop once the movie is found
+        break
 else:
     print("Movie 'Interstellar' not found.")
 
 # Access a specific movie by index (e.g., "Fight Club")
 fight_club = movies[5]  # "Fight Club" is at index 5
 print("\nDetails of 'Fight Club':")
-pprint(fight_club)  # Pretty-print the movie details
+pprint(fight_club)
 
-# Access a specific value from the movie dictionary
-print("\nThe genre of the movie 'Fight Club' is:")
-print(fight_club["genero"])  # Print the genre directly
+# Access a specific value (genre) from the movie dictionary
+print("\nThe genre of 'Fight Club' is:")
+print(fight_club["genero"])
 
-# Convert the movie data to a tabular format using pandas
-# This is useful for better visualization and manipulation
+# Convert the movie data to a DataFrame for better visualization
 fight_club_df = pd.DataFrame.from_dict(fight_club, orient="index").T
 
 # Print the movie data in a tabular format
-print("\nThe data of the movie 'Fight Club' in a tabular format:")
-print(fight_club_df)  # This is not magic, just Python and pandas!
+print("\nData of 'Fight Club' in a tabular format:")
+print(fight_club_df)

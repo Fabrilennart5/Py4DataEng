@@ -1,74 +1,43 @@
-# working and having no errors is like dreaming
-# so we need to manage the errors
+# Error handling is essential to ensure robust and predictable code.
 
-
-# Define a function to calculate the square of a number
+# Function to calculate the square of a number
 def square(x):
-    # Return the square of the input number
     return x * x
 
 
-# Attempt to execute the square function with a valid input
+# Test the square function with valid and invalid inputs
 try:
-    # Print the result of squaring the number 2
-    print(square(2))
-# Catch TypeError exceptions
+    print(square(2))  # Valid input
 except TypeError:
-    # Print an error message if a TypeError occurs
-    print("You have to pass a number")
+    print("Error: Input must be a number.")
 
-# Attempt to execute the square function with an invalid input
 try:
-    # Print the result of squaring the string "2"
-    print(square("2"))
-# Catch TypeError exceptions
+    print(square("2"))  # Invalid input
 except TypeError:
-    # Print an error message if a TypeError occurs
-    print("You have to pass a number")
-
-
-# Also we can create a class to manage the errors
-# Python has built-in exceptions like ValueError, TypeError, etc.,
-# but sometimes we want to handle more specific situations.
-# For example: In an authentication system, a password failure
-# shouldn't be a generic ValueError. In a banking system, an
-# attempt to withdraw with insufficient funds isn't just a TypeError.
+    print("Error: Input must be a number.")
 
 
 # Custom exception for authentication errors
 class AuthenticationError(Exception):
-    """
-    Custom exception for handling authentication failures.
-    """
-
+    """Raised when authentication fails."""
     def __init__(self, message="Invalid username or password"):
-        """
-        Initialize the exception with a default authentication failure message.
-        """
-        self.message = message
-        super().__init__(self.message)
+        super().__init__(message)
 
 
+# Simple user authentication system
 class UserDatabase:
-    """
-    A simple user authentication system.
-    """
-
     def __init__(self):
-        # Simulated database: dictionary with username-password pairs
+        # Simulated database: username-password pairs
         self.users = {"admin": "1234", "user1": "password"}
 
     def authenticate(self, username, password):
-        """
-        Check if the provided username and password match the stored credentials.
-        """
+        """Authenticate a user with username and password."""
         if username not in self.users or self.users[username] != password:
-            # Raise a custom exception when authentication fails
-            raise AuthenticationError("Login failed: incorrect username or password")
+            raise AuthenticationError("Login failed: incorrect credentials")
         return "Login successful!"
 
 
-# Testing the authentication system
+# Test the authentication system
 db = UserDatabase()
 
 try:
