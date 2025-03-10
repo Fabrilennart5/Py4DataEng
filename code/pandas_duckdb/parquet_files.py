@@ -8,17 +8,19 @@ my_data = pq.read_table(
     "D:\\Proyectos de codigo\\python\\code\\data_sources\\Parquet_files\\house-price.parquet"
 )
 # here we are going to print the shape of the data
+print("This is the structure of the data")
 print(my_data.shape)
 
 # after that we have to print the data:
+print("This is all the data")
 print(my_data)
 
 # As we see its a lot of data so we need to filter them
+print("And this is the data but only with the columns that we need")
 new_data = pq.read_table(
-    "example.parquet",
-    columns=["col1"],
-    filters=[
-        ("col1", ">", 5),
-        ("col1", "<", 10),
-    ],
+    "D:\\Proyectos de codigo\\python\\code\\data_sources\\Parquet_files\\house-price.parquet",
+    columns=["area", "price"],
 )
+
+# Then we check if the dataset has been filtered
+print(new_data)
