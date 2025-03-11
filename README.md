@@ -29,9 +29,6 @@ Welcome to **Py4DataEng**, your ultimate resource hub for mastering Python in th
 - **Melting & JSON Normalization**: Reshape and normalize your data. 🍫
 - **DuckDB Integration**: Supercharge your data workflows with DuckDB's lightning-fast SQL queries. 🦆⚡
 
-### 🔢 **Numpy: The Backbone of Numerical Computing**
-- **Numpy Basics**: Master arrays and numerical operations. 🧮
-
 ### 📂 **Working with Data Sources & Sinks**
 - **API Requests**: Fetch data from APIs like a pro. 🌐
 - **Database Setup**: Configure and connect to databases. 🗃️
