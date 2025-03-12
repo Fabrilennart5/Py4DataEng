@@ -40,3 +40,13 @@ query3 = f"""
 
 print("\nQuantity of orders by year:")
 print(duckdb.sql(query3))
+
+
+# Example 4: Query to group the total_price by product_category.
+query4 = f"""
+    SELECT SUM(total_price) AS Total, product_category FROM read_csv_auto('{csv_path}')
+    GROUP BY product_category;
+"""
+
+print("\n total amount:")
+print(duckdb.sql(query4))
