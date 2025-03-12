@@ -6,7 +6,7 @@ from pprint import pprint
 import pandas as pd
 
 # Path to the JSON file
-path = r"D:\Proyectos de codigo\python\code\data_sources\movies.json"
+path = r"D:\Proyectos de codigo\python\code\data_sources\Json_data\movies.json"
 
 # Open and load the JSON file
 with open(path, "r", encoding="utf-8") as file:
